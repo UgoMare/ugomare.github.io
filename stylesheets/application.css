@@ -5873,6 +5873,12 @@ body {
 
 #home-carousel {
   margin-top: 75px; }
+  #home-carousel .item {
+    height: 540px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover; }
 
 .container.content {
   padding-top: 30px;
@@ -5919,3 +5925,10 @@ body {
   background-color: #bfcadc; }
   .moyens h2, .moyens p {
     color: #002d73; }
+
+.image {
+  height: 540px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover; }
