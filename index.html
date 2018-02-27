@@ -34,30 +34,31 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link href="/stylesheets/application.css" rel="stylesheet" />
   <script src="/javascripts/application.js"></script>
-  </head>
+</head>
 
-  <body>
-    <nav class="navbar navbar-pcps navbar-fixed-top" id="pcps_nav">
+<body>
+  <nav class="navbar navbar-pcps navbar-fixed-top" id="pcps_nav">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pcps_nav-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-        <img src="/images/PCPS_paris11_white.svg" alt="logo" />
+        <img src="/images/PCPS_paris11.svg" alt="logo" />
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="pcps_nav-collapse">
       <ul class="nav navbar-nav navbar-left">
         <li><a href="#antenne" class='scroll_to'>L'antenne<span class="sr-only">(current)</span></a></li>
         <li><a href="#missions" class='scroll_to'>Nos missions</a></li>
         <li><a href="mailto:contact@protectioncivile-paris11.org?subject=Candidature Protection Civile de Paris 11">Nous rejoindre</a></li>
+        <li><a href="mailto:contact@protectioncivile-paris11.org?subject=Réservation d'un poste de secours&body=Bonjour,%0A%0ANous voudrions que vous assuriez le secours sur notre événement : .....%0A%0ADate(s) : %0ALieu(x) :%0ANombre de personnes attendues : %0ANombre de personnes attendues au même moment : %0ANature de l'événement :%0A%0ACordialement,">Réserver un poste de secours</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="https://www.facebook.com/ProtectionCivileParisSeineAntenneParis11/"><i class='fa fa-facebook'></i></a></li>
@@ -69,7 +70,7 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+  <div id="home-carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
@@ -108,7 +109,7 @@
           <b>La Protection Civile de Paris</b> est une association loi 1901 affiliée à la Fédération Nationale de la Protection Civile (FNPC), reconnue d’utilité publique et agréée de sécurité civile.
           <br>
           <br>
-          L’antenne du 11ème arrondissement de Paris a été créée en 2015. Nous sommes situés au <b>1 Pont Morland, 75004 Paris</p>
+          L’antenne du 11ème arrondissement de Paris a été créée fin 2015. Nous sommes situés au <b>1 Pont Morland, 75004 Paris</p>
         </div>
       </div>
     </div>
@@ -142,7 +143,7 @@
         <h2>NOS MOYENS</h2>
         <br>
         <p class="descr">
-          Pour votre manifestation / évènement, l'antenne de la Protection Civile Paris Seine 11 dispose de <b>moyens matériels importants</b> qu’elle peut employer à bonne tenue du service secours / santé :
+          Pour votre manifestation / évènement, notre antenne dispose de <b>moyens matériels importants</b> qu’elle peut employer :
         </p>
         <br>
         <div class="col-md-4 ico">
@@ -161,6 +162,8 @@
     </div>
   </div>
 
+  <div id="map"></div>
+
   <div class="missions" id="missions">
     <div class="container content">
       <div class="row">
@@ -173,7 +176,7 @@
           <a href="https://www.protectioncivile.org/formations-grand-public/vous-former" class="btn btn-pcps center-block">Trouver une formation</a>
         </div>
         <div class="col-md-4">
-          <a href="mailto:contact@protectioncivile-paris11.org?subject=Réservation d'un poste de secours" class="btn btn-pcps center-block">Réserver un poste de secours</a>
+          <a href="mailto:contact@protectioncivile-paris11.org?subject=Réservation d'un poste de secours&body=Bonjour,%0A%0ANous voudrions que vous assuriez le secours sur notre événement : .....%0A%0ADate(s) : %0ALieu(x) :%0ANombre de personnes attendues : %0ANombre de personnes attendues au même moment : %0ANature de l'événement :%0A%0ACordialement," class="btn btn-pcps center-block">Réserver un poste de secours</a>
         </div>
         <div class="col-md-4">
           <a href="mailto:contact@protectioncivile-paris11.org?subject=Candidature Protection Civile de Paris 11" class="btn btn-pcps center-block">Nous rejoindre</a>
@@ -183,18 +186,18 @@
   </div>
   <div class='image' style="background-image: url(https://www.protectioncivile.org/wp-content/uploads/2017/12/pcps-benevolat-1.jpg);"></div>
 
-    <footer class="footer">
+  <footer class="footer">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <img src="/images/PCPS_paris11.svg" alt="logo" />
+        <img src="/images/PCPS_paris11_white.svg" alt="logo" />
       </div>
       <div class="col-md-2 col-md-offset-1">
         <ul class="list-unstyled link-list">
-          <li>L'antenne</li>
-          <li>Formations</li>
-          <li>Poste de secours</li>
-          <li>Nous rejoindre</li>
+          <li><a href="#antenne" class='scroll_to'>L'antenne</a></li>
+          <li><a href="https://www.protectioncivile.org/formations-grand-public/vous-former">Formations</a></li>
+          <li><a href="mailto:contact@protectioncivile-paris11.org?subject=Réservation d'un poste de secours&body=Bonjour,%0A%0ANous voudrions que vous assuriez le secours sur notre événement : .....%0A%0ADate(s) : %0ALieu(x) :%0ANombre de personnes attendues : %0ANombre de personnes attendues au même moment : %0ANature de l'événement :%0A%0ACordialement,">Poste de secours</a></li>
+          <li><a href="mailto:contact@protectioncivile-paris11.org?subject=Candidature Protection Civile de Paris 11">Nous rejoindre</a></li>
         </ul>
       </div>
       <div class="col-md-4 col-md-offset-1">
@@ -203,11 +206,22 @@
           <br>
           <li><b>Tel :</b> +33 (0)6 26 97 10 24</li>
           <br>
-          <li><b>Adresse :</b></li>
-          <li>1 Pont Morland - 75004 Paris</li>
+          <li><b>Adresse :</b> 1 Pont Morland - 75004 Paris</li>
+          <li>
+            <img class='metro' src="https://www.ratp.fr/sites/default/files/network/metro/ligne5.svg" alt=""> Quai de la Rapée
+          </li>
+          <li>
+            <img class='metro' src="https://www.ratp.fr/sites/default/files/network/metro/ligne1.svg" alt="">
+            <img class='metro' src="https://www.ratp.fr/sites/default/files/network/metro/ligne5.svg" alt="">
+            <img class='metro' src="https://www.ratp.fr/sites/default/files/network/metro/ligne7.svg" alt="">
+            Bastille
+          </li>
+          <li>
+            <img class='metro' src="https://www.ratp.fr/sites/default/files/network/metro/ligne7.svg" alt="">
+            Sully-Morland
+          </li>
           <br>
-          <li><b>Email :</b></li>
-          <li>contact@protectioncivile-paris11.org</li>
+          <li><b>Email :</b> contact@protectioncivile-paris11.org</li>
           <br>
           <li class='socials-ico'>
             <a href="https://www.facebook.com/ProtectionCivileParisSeineAntenneParis11/"><i class='fa fa-facebook'></i></a>
@@ -221,15 +235,66 @@
 </footer>
 
 
-    <script>
-      $(".scroll_to").click(function(e) {
-        e.preventDefault();
-        var target = $(this).attr('href');
-        console.log(target);
-          $('html, body').animate({
-              scrollTop: $(target).offset().top - 75
-          }, 1000);
+  <script>
+    $(".scroll_to").click(function(e) {
+      e.preventDefault();
+      var target = $(this).attr('href');
+      console.log(target);
+      $('html, body').animate({
+        scrollTop: $(target).offset().top - 75
+      }, 1000);
+    });
+  </script>
+
+  <script>
+    function initMap() {
+
+      var styledMapType = new google.maps.StyledMapType(
+        [
+        {"featureType": "administrative","elementType": "labels.text.fill","stylers": [{"color": "#444444"}]},
+        {"featureType": "landscape","elementType": "all","stylers": [{"color": "#f2f2f2"}]},
+        {"featureType": "poi","elementType": "all","stylers": [{"visibility": "off"}]},
+        {"featureType": "road","elementType": "all","stylers": [{"saturation": -100},{"lightness": 45}]},
+        {"featureType": "water","elementType": "all","stylers": [{"color": "#46bcec"},{"visibility": "on"}]},
+        // {"featureType": "all","elementType": "all","stylers": [{"hue": "#0c2f72"},{"saturation" : 100}]},
+        {"featureType": "road.arterial","elementType": "labels.icon","stylers": [{"visibility": "off"}]},
+        {"featureType": "transit","elementType": "all","stylers": [{"visibility": "off"}]},
+        ]
+        );
+
+      var pcps_11 = { lat: 48.8472235, lng: 2.365718700000002 };
+      var paris = { lat: 48.85661400000001, lng: 2.3522219000000177 };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 13,
+        center: paris,
+        mapTypeControl: false,
+        streetViewControl: false
       });
-    </script>
-  </body>
+      map.mapTypes.set('styled_map', styledMapType);
+      map.setMapTypeId('styled_map');
+
+      var transitLayer = new google.maps.TransitLayer();
+      transitLayer.setMap(map);
+
+      var marker = new google.maps.Marker({
+        position: pcps_11,
+        map: map,
+        title: "Protection Civile Paris 11",
+        icon: {
+          url: '/images/map-marker.png',
+          scaledSize: new google.maps.Size(35, 50),
+        }
+      });
+
+      google.maps.event.addListener(marker, 'click', function() {
+        window.open('https://www.google.fr/maps/dir//1+Pont+Morland,+Paris/')
+      });
+
+
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+</script>
+</body>
 </html>

@@ -5811,7 +5811,7 @@ body {
 
 .navbar-pcps {
   font-family: 'Poppins', sans-serif;
-  background-color: #ff7f2f;
+  background-color: #0c2f72;
   color: #fff;
   border-radius: 0px;
   min-height: 74px; }
@@ -5838,9 +5838,9 @@ body {
       font-size: 12px; }
       .navbar-pcps .navbar-nav.navbar-left > li > a .active, .navbar-pcps .navbar-nav.navbar-left > li > a:active, .navbar-pcps .navbar-nav.navbar-left > li > a:focus {
         background-color: #fff;
-        color: #ff7f2f; }
+        color: #0c2f72; }
       .navbar-pcps .navbar-nav.navbar-left > li > a:hover {
-        background-color: #0c2f72; }
+        background-color: #ff7f2f; }
   .navbar-pcps .navbar-nav.navbar-right {
     margin-top: 10px;
     margin-bottom: 10px; }
@@ -5848,8 +5848,10 @@ body {
       font-size: 20px;
       width: 50px;
       text-align: center;
-      background-color: #0c2f72;
+      background-color: #ff7f2f;
       margin: 2px; }
+    .navbar-pcps .navbar-nav.navbar-right li {
+      display: inline-block; }
   .navbar-pcps .navbar-brand {
     padding: 0px;
     text-shadow: none;
@@ -5864,6 +5866,10 @@ body {
   font-weight: 100;
   color: #fff;
   letter-spacing: 0.05em; }
+  .footer a {
+    color: #fff; }
+  .footer .metro {
+    width: 20px; }
   .footer .link-list {
     margin-top: 20px; }
     .footer .link-list .socials-ico a {
@@ -5925,6 +5931,9 @@ body {
   background-color: #bfcadc; }
   .moyens h2, .moyens p {
     color: #002d73; }
+
+#map {
+  height: 540px; }
 
 .image {
   height: 540px;
